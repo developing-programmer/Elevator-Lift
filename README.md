@@ -16,3 +16,5 @@ Steps to run the project in developers local machine
 6. Navigate to elevator-service folder and run commands below: 
    1. npm i 
    2. npm run dev
+   3. Open the running server with extension "/swagger/v1/" once server is running to access API documentation
+      e.g http://localhost:8080/swagger/v1/
