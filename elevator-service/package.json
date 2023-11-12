@@ -1,0 +1,33 @@
+{
+  "name": "authentication-service",
+  "version": "1.0.0",
+  "description": "Tushop authentication services",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha **/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "helmet": "^5.0.2",
+    "http-status-codes": "^2.2.0",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "pg": "^8.11.3",
+    "sequelize": "^6.34.0",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-model-validator": "^3.0.21",
+    "swagger-ui-express": "^4.3.0",
+    "url": "^0.11.0",
+    "uuid": "^8.3.2"
+  },
+  "license": "ISC"
+}
