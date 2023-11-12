@@ -10,7 +10,7 @@ app.use(express.json());
 
 require("./swagger/swagger")(app);
 
-require("./routers/authentication.router")(router);
+require("./routers/elevator.router")(router);
 
 app.use("/api/authenticationService", router);
 
