@@ -320,8 +320,8 @@ const recheckQueue = async (elevatorId) => {
   const elevStatus = await sequelize.query(elevQuery);
 
   if (
-    elevStatus[0][0].queue.requestQueues.length === 0 ||
-    elevStatus[0][0].queue === null
+    !elevStatus[0][0].queue ||
+    elevStatus[0][0].queue.requestQueues.length === 0
   ) {
     const updateQuery = `UPDATE "ElevatorState" SET "statusId" = 1 WHERE "elevatorId"=${elevatorId}`;
     const currentLog =
